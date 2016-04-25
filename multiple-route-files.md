@@ -5,7 +5,7 @@ Multiple Route files in Rails
 
 at config/application.rb
 
-```
+``` ruby
 Dir[Rails.root.join('config/routes/*.rb').each do |file|
   config.paths['config/routes.rb'] << file
 end
@@ -13,7 +13,7 @@ end
 
 at config/routes/version_one.rb
 
-```
+``` ruby
 Rails.application.routes.draw do
   get 'test_v1' => 'controller#action'
 end
@@ -21,7 +21,7 @@ end
 
 at config/routes/version_two.rb
 
-```
+``` ruby
 Rails.application.routes.draw do 
   get 'test_v1' => 'controller#action'
 end
